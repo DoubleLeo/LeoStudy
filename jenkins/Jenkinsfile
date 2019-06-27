@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deliver for development') {
             when {
-                branch 'development'
+                branch 'master'
             }
             steps {
                 sh './jenkins/scripts/deliver-for-development.sh'
